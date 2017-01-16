@@ -1,0 +1,57 @@
+
+body {
+    background-image: url("../img/grass.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+#title h1 {
+    color: #56a521;
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 3vw;
+    font-family: 'Delius Swash Caps', cursive;
+}
+.navButton {
+    margin-top: 1.4vh;
+    background-color: white;
+    height: 2vw;
+    width: 6vw;
+    font-size: 1vw;
+    font-family: 'Itim', cursive;
+    text-align: center;
+    opacity: 0.5;
+}
+.navButton:hover {
+    opacity: 0.8;
+}
+.navButton p{
+    margin: 0.5vh auto;
+}
+#backButton {
+    float: left;
+    margin-left: 2vw;
+}
+#logoutButton {
+    float: right;
+    margin-right: 2vw;
+}
+
+
+#graphContainer {
+    overflow: auto;
+    width: 80vw;
+    height: 70vh;
+    position: relative;
+    margin: 8vh auto;
+    text-align: center;
+    opacity: 0.9;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+
+h2 {
+    font-family: 'Itim', cursive;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}

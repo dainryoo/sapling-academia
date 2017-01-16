@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Teacher Home</title>
+        <link rel="stylesheet" href="../css/styleMainPage.css" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Delius+Swash+Caps|Itim|Raleway" rel="stylesheet">
+    </head>
+
+    <script>
+        function logout() {
+            window.location.assign("../php/home.php");
+        }
+    </script>
+
+    <body>
+
+        <div class="navButton" id="backButton">
+            <p>Back Home</p>
+        </div>
+        <div class="navButton" id="logoutButton" onclick="logout()">
+            <p>Logout</p>
+        </div>
+
+        <div id="title">
+            <h1>Sapling Academia</h1>
+        </div>
+
+        <div id="optionsList">
+            <div class="option" id="manageStudentsDiv" onclick="callPage('manageStudents');">
+                <h3>Manage Students</h3>
+                <p>Add students to class roll</p>
+            </div>
+            <div class="option" id="manageQuizDiv"  onclick="callPage('manageQuiz');">
+                <h3>Manage Quizzes</h3>
+                <p>Edit questions/answers for quizzes</p>
+            </div>
+            <div class="option" id="sampleQuizDiv"  onclick="callPage('sampleQuiz');">
+                <h3>Take a Sample quiz</h3>
+                <p>Put yourself in your students' tiny shoes</p>
+            </div>
+            <div class="option" id="viewScoresDiv"  onclick="callPage('viewScores');">
+                <h3>View Students' Scores</h3>
+                <p>Keep track of your class's progress</p>
+            </div>
+        </div>
+
+    </body>
+</html>
+
+<script>
+    function callPage(selectedAction){
+        // document.cookie = "subject=" + subject + "; ; path=/";
+        if (selectedAction == "manageStudents") {
+            window.location.assign("../php/manageClass.php");
+        } else if (selectedAction == "manageQuiz") {
+            window.location.assign("../php/manageQuiz.php");
+        } else if (selectedAction == "sampleQuiz") {
+            window.location.assign("../html/studentPage.html");
+        } else if (selectedAction == "viewScores") {
+            window.location.assign("../html/graphs.html");
+        }
+    }
+</script>

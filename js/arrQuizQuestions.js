@@ -1,0 +1,1 @@
+var questions = [{answer:"Simile", question:"a comparison using 'like' or 'as'"},{answer:"metaphor", question:"a comparison without using 'like' or 'as'"},{answer:"hyperbole", question:"an exaggeration"},{answer:"synonym", question:"a word with a similar meaning to another word"},{answer:"onomatopoeia", question:"a word associated with a sound effect"}];

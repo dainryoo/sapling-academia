@@ -1,0 +1,96 @@
+.navButton {
+    margin-top: 1.4vh;
+    background-color: white;
+    height: 2vw;
+    width: 6vw;
+    font-size: 1vw;
+    font-family: 'Itim', cursive;
+    text-align: center;
+    opacity: 0.5;
+}
+.navButton:hover {
+    opacity: 0.8;
+}
+.navButton p{
+    margin: 0.5vh auto;
+}
+#backButton {
+    float: left;
+    margin-left: 2vw;
+}
+#logoutButton {
+    float: right;
+    margin-right: 2vw;
+}
+
+#title h1 {
+    color: #56a521;
+    text-align: center;
+    margin-bottom: 5vh;
+    font-size: 3vw;
+    font-family: 'Delius Swash Caps', cursive;
+}
+
+
+body {
+    background-image: url("../img/grass.jpg");
+    background-size: cover;
+    background-position: top;
+    font-family: 'Raleway', sans-serif;
+}
+
+#allQs, #placeholder {
+    margin-top: 5vh;
+    overflow: auto;
+    height: 50vh;
+    width: 70%;
+    opacity: 0.8;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#placeholder {
+    background-color: white;
+    opacity: 0.5;
+}
+#placeholder p {
+    padding-top: 16vh;
+}
+
+#selection, #newQ {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+#newQ {
+    width: 70%;
+    margin: 0 auto;
+    background-color: #daffba;
+    opacity: 0.8;
+    height: 20vh;
+    padding: 5px 0;
+}
+
+table{
+    width: 100%;
+    background-color: white;
+    border-collapse: collapse;
+    font-family: 'Raleway', sans-serif;
+}
+
+tr:nth-child(odd){
+    background: #c5ebf9;
+}
+
+th, td{
+    padding: 10px;
+    text-align: center;
+    border: solid 1px #7cdcff;
+}
+
+
+td::first-letter{
+    text-transform: uppercase;
+}
+

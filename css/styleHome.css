@@ -1,0 +1,173 @@
+#cover {
+    background-image: url("../img/hands.jpg");
+    background-size: cover;
+    background-position: top;
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:1000;
+    text-align: center;
+}
+#cover #inner {
+    height: 80%;
+    width: 90%;
+    border: 1px solid #444444;
+    margin: 5vh auto;
+}
+#welcome {
+    margin-top: 5vh;
+    color: #828282;
+    font-size: 1vw;
+    font-family: 'Itim', cursive;
+}
+#introTitle {
+    margin-top: 5vh;
+    font-size: 3vw;
+    color: white;
+    font-family: 'Delius Swash Caps', cursive;
+}
+.intro {
+    font-family: 'Itim', cursive;
+    font-size: 1.5vw;
+    color: #a3a3a3;
+}
+#intro1 {
+    margin-right: 32vw;
+}
+#intro2 {
+    margin-left: 42vw;
+}
+#continue {
+    margin-top: 45vh;
+    margin-left: 5vw;
+    color: #aaff72;
+    font-size: 1.3vw;
+    font-family: 'Itim', cursive;
+}
+
+
+
+.navButton {
+    margin-top: 1.4vh;
+    background-color: white;
+    height: 2vw;
+    width: 6vw;
+    font-size: 1vw;
+    font-family: 'Itim', cursive;
+    text-align: center;
+    opacity: 0.5;
+}
+.navButton:hover {
+    opacity: 0.8;
+}
+.navButton p{
+    margin: 0.5vh auto;
+}
+#backButton {
+    float: left;
+    margin-left: 2vw;
+}
+#logoutButton {
+    float: right;
+    margin-right: 2vw;
+}
+
+
+
+
+body {
+    background-image: url("../img/grass.jpg");
+    background-size: cover;
+    background-position: top;
+}
+
+#title h1 {
+    color: #56a521;
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 3vw;
+    font-family: 'Delius Swash Caps', cursive;
+}
+
+#listContainer {
+    width: 30vw;
+    height: 72vh;
+    margin-top: 8vh;
+    margin-left: 40vh;
+    position: absolute;
+    overflow: auto;
+}
+
+.listItem{
+    display: block;
+    float: none;
+    width: 100%;
+    height: 60px;
+    position: relative;
+    background-color: #aaff72;
+    opacity: 0.8;
+    text-align: center;
+    margin-bottom: 2px;
+    border-radius: 2px;
+    color: green;
+}
+
+.listItem:hover {
+    background-color: #77e55b;
+}
+
+
+.listText {
+    font-size: 1.5vw;
+    margin: 0;
+    padding: 2vh 0;
+    font-family: 'Itim', cursive;
+}
+
+#passwordBox, #placeholder{
+    width: 30vw;
+    height: 72vh;
+    margin-top: 8vh;
+    position: absolute;
+    left: 50%;
+    background-color: #7cdcff;
+    opacity: 0.7;
+    font-family: 'Raleway', sans-serif;
+}
+
+#placeholder p{
+    text-align: center;
+    font-size: 2vw;
+}
+#placeholder :first-child {
+    padding-top: 14vh;
+}
+
+#passwordBox {
+    visibility: hidden;
+    opacity: 0.7;
+}
+
+#passwordBoxInfo {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    font-size: 2vw;
+    color: black;
+}
+
+
+#userpwd{
+    width: 100%;
+    height: 15%;
+    font-size: 2vw;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    color: grey;
+}

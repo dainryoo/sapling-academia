@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student Home</title>
+        <link rel="stylesheet" href="../css/styleMainPage.css" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Delius+Swash+Caps|Itim|Raleway" rel="stylesheet">
+    </head>
+
+    <script>
+        function logout() {
+            window.location.assign("../php/home.php");
+        }
+    </script>
+
+    <body>
+
+        <div class="navButton" id="backButton">
+            <p>Back Home</p>
+        </div>
+        <div class="navButton" id="logoutButton" onclick="logout()">
+            <p>Logout</p>
+        </div>
+
+        <div id="title">
+            <h1>Sapling Academia</h1>
+        </div>
+
+        <div id="optionsList">
+            <div class="option" onclick="callMainQuizPage('english');">
+                <h3>Eng·lish</h3>
+                <p class="pronunciation">['iNG(g)liSH]</p>
+                <p>the West Germanic language of England, now widely used in many varieties throughout the world</p>
+            </div>
+            <div class="option" onclick="callMainQuizPage('history');">
+                <h3>History</h3>
+                <p class="pronunciation">[hist(ə)rē]</p>
+                <p>the study of past events, particularly in human affairs</p>
+            </div>
+            <div class="option" onclick="callMainQuizPage('math');">
+                <h3>Math</h3>
+                <p class="pronunciation">[maTH(ə)'madiks]</p>
+                <p>the abstract science of number, quantity, and space</p>
+            </div>
+            <div class="option" onclick="callMainQuizPage('science');">
+                <h3>Science</h3>
+                <p class="pronunciation">[sīəns]</p>
+                <p>knowledge about the natural world based on facts learned through experiments and observation</p>
+            </div>
+        </div>
+
+    </body>
+</html>
+
+<script>
+    function callMainQuizPage(subject){
+        document.cookie = "subject=" + subject + "; ; path=/";
+        window.location.assign("../html/quiz.html");
+    }
+</script>

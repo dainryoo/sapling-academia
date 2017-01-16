@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Class Progress</title>
+        <script src="https://d3js.org/d3.v4.js"></script>
+        <script type="text/javascript" src="../js/arrStudentScoreInfo.js"></script>
+        <link rel="stylesheet" href="../css/stylesGraphPage.css" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Delius+Swash+Caps|Itim|Raleway" rel="stylesheet">
+    </head>
+
+    <script>
+        function logout() {
+            window.location.assign("../php/home.php");
+        }
+        function goHome() {
+            window.location.assign("../html/teacherPage.html");
+        }
+    </script>
+
+    <body>
+
+        <div class="navButton" id="backButton" onclick="goHome()">
+            <p>Back Home</p>
+        </div>
+        <div class="navButton" id="logoutButton" onclick="logout()">
+            <p>Logout</p>
+        </div>
+
+        <div id="title">
+            <h1>Sapling Academia</h1>
+        </div>
+
+        <div id="graphContainer">
+            <div>
+                <h2 style="color:#9fbc91;">All Subjects</h2>
+                <div id="allGraph"></div>
+                <h2 style="color:#87a3db;">English</h2>
+                <div id="engGraph"></div>
+                <h2 style="color:#b8e08f;">Science</h2>
+                <div id="sciGraph"></div>
+                <h2 style="color:#92d3e5;">Math</h2>
+                <div id="mathGraph"></div>
+                <h2 style="color:#8bbc8e;">History</h2>
+                <div id="histGraph"></div>
+            </div>
+        </div>
+
+        <script src="../js/scriptsGraphPage.js"></script>
+
+    </body>
+</html>
+

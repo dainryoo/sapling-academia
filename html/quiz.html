@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quiz Time!</title>
+        <link rel="stylesheet" href="../css/stylesQuiz.css" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Delius+Swash+Caps|Itim|Raleway" rel="stylesheet">
+        <script type="text/javascript" src="../js/scriptsMainQuizPage.js"></script>
+        <script type="text/javascript" src="../js/arrQuizQuestions.js"></script>
+    </head>
+
+    <script>
+        function logout() {
+            window.location.assign("../php/home.php");
+        }
+        function goHome() {
+            window.location.assign("../html/studentPage.html");
+        }
+    </script>
+
+    <body onload="setUpPage();">
+
+        <div class="navButton" id="backButton" onclick="goHome()">
+            <p>Back Home</p>
+        </div>
+        <div class="navButton" id="logoutButton" onclick="logout()">
+            <p>Logout</p>
+        </div>
+        <div id="title">
+            <h1>Sapling Academia</h1>
+            <h3 class="titleText"><span id="subject"></span> Quiz</h3>
+        </div>
+
+
+        <div id="quizContainer">
+
+            <div id="allQuestions">
+                <h2>Read each question carefully</h2>
+            </div>
+            <div id="allAnswers">
+                <h2>and choose the best answer:</h2>
+            </div>
+
+        </div>
+
+        <div id="endMessage">
+            <h1>Thank you for taking the quiz!</h1>
+            <h2>Your score has been recorded</h2>
+            <p>You may now logout (come back soon!) or return to the home page by clicking on the buttons on the top.</p>
+        </div>
+        <div id="submitButton" onclick="submitQuiz()">
+                <p>Done!</p>
+            </div>
+
+
+    </body>
+</html>

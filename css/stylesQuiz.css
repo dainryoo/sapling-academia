@@ -1,0 +1,137 @@
+body {
+    background-image: url("../img/grass.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+#title h1, .titleText {
+    color: #56a521;
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 3vw;
+    font-family: 'Delius Swash Caps', cursive;
+}
+
+.titleText {
+    margin-top: 1vh;
+    font-size: 1.3vw;
+}
+
+.navButton {
+    margin-top: 1.4vh;
+    background-color: white;
+    height: 2vw;
+    width: 6vw;
+    font-size: 1vw;
+    font-family: 'Itim', cursive;
+    text-align: center;
+    opacity: 0.5;
+}
+.navButton:hover {
+    opacity: 0.8;
+}
+.navButton p{
+    margin: 0.5vh auto;
+}
+#backButton {
+    float: left;
+    margin-left: 2vw;
+}
+#logoutButton {
+    float: right;
+    margin-right: 2vw;
+}
+
+#quizContainer {
+    background-color: white;
+    opacity: 0.9;
+    width: 75vw;
+    position: relative;
+    margin: 0 auto;
+    height: 55vh;
+    overflow: auto;
+    margin-top: 10vh;
+    border-radius: 15px;
+}
+
+#allQuestions {
+    height: 100%;
+    width: 50%;
+    background-color: lightblue;
+    text-align: right;
+    float: left;
+}
+#allAnswers {
+    height: 100%;
+    width: 50%;
+    background-color: lightgreen;
+    text-align: left;
+    float: left;
+}
+#allQuestions p, #allAnswers p {
+    padding: 2vh;
+    margin: 0;
+    color: grey;
+    font-size: 1.4vw;
+    font-family: "Itim", cursive;
+}
+#allQuestions h2, #allAnswers h2 {
+    color: white;
+    font-size: 1.6vw;
+    font-family: "Raleway", sans-serif;
+}
+#allQuestions h2 {
+    text-align: right;
+    margin-right: 1vw;
+}
+#allAnswers h2 {
+    text-align: left;
+    margin-left: 1vw;
+    margin-bottom: 5.5vh;
+}
+
+#allAnswers select {
+    display: block;
+    margin-left: 2vw;
+    margin-bottom: 3.95vh;
+    color: grey;
+    font-family: "Itim", cursive;
+    font-size: 1.2vw;
+}
+
+#submitButton {
+    position: relative;
+    margin: 0 auto;
+    width: 6vw;
+    height: 4vh;
+    background-color: cyan;
+    opacity: 0.6;
+    text-align: center;
+    font-family: 'Delius Swash Caps', cursive;
+    font-size: 1.5vw;
+    border-radius: 6px;
+    color: white;
+}
+
+#endMessage {
+    background-color: #abce75;
+    opacity: 0.9;
+    width: 75vw;
+    position: relative;
+    margin: 0 auto;
+    height: 55vh;
+    overflow: auto;
+    margin-top: 10vh;
+    border-radius: 15px;
+    display: none;
+    text-align: center;
+    color: white;
+    font-family: "Raleway", sans-serif;
+}
+
+#endMessage h1 {
+    font-family: "Itim", cursive;
+    margin-top: 10vh;
+    margin-bottom: 8vh;
+}
